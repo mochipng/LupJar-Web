@@ -108,6 +108,11 @@ div {
     padding-left: 10vw;
 }
 
+.infoText:nth-child(1){
+    padding-left: 0;
+    padding-right:10vw;
+}
+
 .infoText h3{
     font-size: 70px;
     line-height: 0;
@@ -124,8 +129,10 @@ div {
     font-family: cascadiaCode;
     transition:0.2s ease;
     width:max(20vw);
+    font-size: 15px;
 }
 
 .infoText button:hover{
     width:max(23vw);
+    word-spacing: 5px;
 }
