@@ -1,0 +1,62 @@
+@font-face {
+    font-family: calSans;
+    src: url(./fonts/Cal_Sans/CalSans-Regular.ttf);
+}
+
+@font-face {
+    font-family: cascadiaCode;
+    src: url(./fonts/Cascadia_Code/CascadiaCode-VariableFont_wght.ttf);
+}
+
+body{
+    background-color: red;
+    margin:0;
+    font-family: cascadiaCode;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-blend-mode:color;
+    color:white;
+    padding: 5px 20px;
+    font-family: calSans;
+}
+
+a{
+    padding: 0px 20px;
+    transition: 0.2s;
+    font-family: cascadiaCode;
+}
+
+a:hover{
+    color:red;
+}
+
+#hero h2, p{
+    color:white;
+    text-align: center;
+}
+
+#hero h2{
+    font-family: calSans;
+    transform: translate(0, 0vh);
+    font-size: 150px;
+}
+
+#hero p{
+    font-family: cascadiaCode;
+    font-size: 30px;
+    transform: translate(0, -15vh);
+}
+
+
+#hero img{
+    position:absolute;
+    top:0px;
+    width:100%;
+    height:85vh;
+    filter: brightness(40%);
+    z-index: -1;
+}
