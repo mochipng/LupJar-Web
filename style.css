@@ -119,13 +119,13 @@ div {
     padding-right:10vw;
 }
 
-.infoText h3{
+.infoText h3, .showcase h3{
     font-size: 70px;
     line-height: 0;
     font-family: calSans;
 }
 
-.infoText button{
+button{
     background-color: white;
     border: 2px solid white;
     color:#bc0000;
@@ -140,10 +140,57 @@ div {
     box-shadow: 5px 5px;
 }
 
-.infoText button:hover{
+button:hover{
     width:max(23vw);
     word-spacing: 5px;
     background-color: #bc0000;
     border: 2px solid #bc0000;
     color:white;
+}
+
+.showcase{
+    display: flex;
+    flex-flow: column;
+    background-color:#bc0000;
+    padding:20px 60px;
+    justify-content: center;
+    text-align: center;
+}
+
+.showcase p{
+    max-width: 1200px;
+}
+
+.showcase h3{
+    color:white;
+    text-shadow:5px 5px black;
+}
+
+.gridCase{
+    padding-top:30px;
+    display: grid;
+    grid-auto-flow: column;
+    gap:10px;
+}
+
+.gridCase img{
+    border-radius: 5px;
+    width:20vw;
+    height:15vw;
+    object-fit: cover;
+    transition: 0.2s ease;
+}
+
+.gridCase img:hover{
+    width:25vw;
+}
+
+.showcase button{
+    color:black;
+}
+
+.showcase button:hover{
+    color:white;
+    border-color: black;
+    background-color: black;
 }
