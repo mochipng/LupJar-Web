@@ -9,10 +9,14 @@
 }
 
 body{
-    background-color:blue;
+    background-color:black;
     margin:0;
     font-family: cascadiaCode;
     font-size: 20px;
+}
+
+h3{
+    color:#bc0000;
 }
 
 header{
@@ -21,9 +25,9 @@ header{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    color:white;
     padding: 5px 20px;
     font-family: calSans;
+    color:white;
     z-index: 20;
     height:60px;
     opacity: 0;
@@ -32,13 +36,16 @@ header{
 }
 
 a{
+    color:#bc0000;
     padding: 0px 20px;
     transition: 0.2s ease;
     font-family: cascadiaCode;
 }
 
 a:hover{
-    font-size: 24px;
+    letter-spacing: 5px;
+    color:white;
+    text-shadow: 2px 2px #bc0000;
 }
 
 #hero{
@@ -79,7 +86,6 @@ a:hover{
 }
 
 #underHero {
-    background-color: black;
     position: relative;
     z-index: 0;
     margin-top:23vh;
@@ -87,7 +93,7 @@ a:hover{
 
 div {
     padding: 50px 10vw;
-    background-color: aqua;
+    background-color:black;
     display:flex;
     flex-flow:row;
     justify-content: space-between;
@@ -122,6 +128,7 @@ div {
 .infoText button{
     background-color: white;
     border: 2px solid white;
+    color:#bc0000;
     border-radius: 5px;
     margin-top:20px;
     align-self: center;
@@ -130,9 +137,13 @@ div {
     transition:0.2s ease;
     width:max(20vw);
     font-size: 15px;
+    box-shadow: 5px 5px;
 }
 
 .infoText button:hover{
     width:max(23vw);
     word-spacing: 5px;
+    background-color: #bc0000;
+    border: 2px solid #bc0000;
+    color:white;
 }
