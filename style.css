@@ -58,7 +58,7 @@ a:hover{
     top: 0;
     left: 0;
     width: 100%;
-    background-image: url(placeholder.png);
+    background-image: url(hero.gif);
     background-position: center;
     background-size: cover;
     filter: brightness(50%);
@@ -123,6 +123,7 @@ div {
     font-size: 70px;
     line-height: 0;
     font-family: calSans;
+    white-space: nowrap;
 }
 
 button{
@@ -166,6 +167,17 @@ button:hover{
     text-shadow:5px 5px black;
 }
 
+@media screen and (max-width: 1082px) {
+
+    div{
+        flex-flow: column;
+    }
+
+    .infoText, .infoText:nth-child(1){
+        padding:0;
+    }
+}
+
 .gridCase{
     padding-top:30px;
     display: grid;
@@ -193,4 +205,19 @@ button:hover{
     color:white;
     border-color: black;
     background-color: black;
+}
+
+footer{
+    display:flex;
+    flex-flow: column;
+    gap:20px;
+    justify-content: center;
+    align-items: center;
+    color:white;
+    padding:50px 100px;
+}
+
+.footerImage{
+    width: 90px;
+    align-self: flex-end;
 }
